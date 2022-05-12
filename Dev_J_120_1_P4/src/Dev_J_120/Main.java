@@ -1,7 +1,7 @@
 package Dev_J_120;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class Main {
 
@@ -25,7 +25,7 @@ public class Main {
         // По заданию 120 курса....
         
         //создаем пустую коллекцию типа Students...
-        Collection<Students> students1 = new ArrayList<>();
+        Collection<Students> students1 = new LinkedList<>();
         //с помощью метода fillCollection(Collection<Students> заполняем созданную коллекцию из массива personsArray. В коллекцию попадают только студенты.
         Students.fillCollection(students1, personsArray);
         //печатаем ее методом printAll
@@ -34,7 +34,7 @@ public class Main {
         
         /*создаем еще одну пустую коллекцию. Типом коллекции может являться любой super тип по отношению к Students,
         в данном случае Person. С Object тоже работает */
-        Collection<Person> students2 = new ArrayList<>();
+        Collection<Person> students2 = new LinkedList<>();
         //с помощью метода fillCollection(Collection<? super Students> заполняем созданную коллекцию из массива personsArray. В коллекцию попадают только студенты.
         Students.fillCollection(students2, personsArray);
         //еще раз печатаем методом printAll
